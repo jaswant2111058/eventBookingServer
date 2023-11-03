@@ -1,13 +1,8 @@
 const mongoose = require("mongoose");
 
 const Schema = new mongoose.Schema({
-    ticket_id : {
-        type: String,
-        required: true
-    },
     signature: {
         type:String,
-
     },
     amount:{
         type:Number,
@@ -18,14 +13,14 @@ const Schema = new mongoose.Schema({
         required: true
     },
     payment_id:{
-       type: String,
+       type: String,  
     },
     verification: {
         type: Boolean,
         required:true
     },
     email:{
-        type:Number,
+        type:String,
         required: true
     }
 },
